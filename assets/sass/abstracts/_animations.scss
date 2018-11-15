@@ -1,0 +1,33 @@
+@keyframes fadeUp {
+  0% {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fillText {
+  0% {
+    stroke-dashoffset: 2000px;
+    fill: rgba(0,0,0,0);
+  }
+
+  30% {
+    stroke-dashoffset:  1500px;
+    fill: rgba(0,0,0,0);
+  }
+
+  80% {
+    fill: rgba(0,0,0,1);
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: rgba(0,0,0,1);
+
+  }
+}

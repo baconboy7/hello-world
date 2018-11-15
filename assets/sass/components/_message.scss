@@ -1,0 +1,55 @@
+.message {
+  margin-bottom: 1rem;
+  max-width: 90%;
+  color: $color-white-1;
+
+  &--left {
+    float: left;
+  }
+
+  &--right {
+    float: right;
+  }
+
+  &__title {
+    opacity: .5;
+
+    &--left{
+      float: left;
+      margin-left: 1rem;
+    }
+
+    &--right {
+      float: right;
+      margin-right: 1rem;
+    }
+  }
+
+  &__body {
+    padding: 1rem;
+    border-radius: 2rem;
+    height: 90%;
+    margin-top: 2rem;
+
+
+    &--left {
+      background-color: $color-grey-3;
+    }
+
+    &--right {
+      background-color: #5179ba;
+    }
+  }
+
+}
+
+.message--system {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: .5;
+}

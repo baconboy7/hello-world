@@ -1,0 +1,76 @@
+.login-form{
+  font-size: 2rem;
+
+  &__input {
+    font-size: 2rem;
+    font-family: inherit;
+    color: $color-white-1;
+    padding: 1.5rem 2rem;
+    border-radius: .8rem;
+    background-image: $gradient-dark-2;
+    border: none;
+    width: 100%;
+    display: block;
+    border-bottom: .3rem solid transparent;
+    transition: all .3s;
+  }
+
+  &__input::placeholder {
+    color: $color-grey-4;
+  }
+
+  &__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    border-bottom: 0.3rem solid #28b485;
+    transform: translateY(-5%);
+  }
+
+  &__input:focus:invalid {
+    border-bottom: 0.3rem solid #ff7730;
+  }
+
+  &__label {
+    font-weight: 700;
+    margin-left: 2rem;
+    display: block;
+    transition: all .3s;
+    transform: translateY(-8rem);
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__select {
+    -webkit-appearance: none;
+    font-size: 2rem;
+    font-family: inherit;
+    color: $color-grey-4;
+    padding: 1.5rem 2rem;
+    border-radius: .8rem;
+    background-image: $gradient-dark-2;
+    border: none;
+    width: 100%;
+    display: block;
+    border-bottom: .3rem solid transparent;
+
+    margin-bottom: 2.5rem;
+
+    &:focus{
+      outline: none;
+    }
+
+    option{
+      color: $color-grey-4;
+
+      &:not(:first-child){
+        color: $color-black-1;
+      }
+    }
+  }
+}
+
+

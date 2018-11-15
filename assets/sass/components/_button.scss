@@ -1,0 +1,38 @@
+.btn {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 3em;
+  border-radius: 10rem;
+  display: block;
+  border: none;
+  cursor: pointer;
+  transition: transform .4s, box-shadow .4s;
+  background-image: $gradient-dark-2;
+  color: $color-white-1;
+
+  &:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  }
+
+  &:active, &:focus {
+    outline: none;
+    transform: translateY(-.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+
+}
+
+.logout-button {
+  position: absolute;
+  right: 12.5%;
+  top: 6rem;
+  opacity: 1;
+  transition: right .5s .5s, transform .4s, box-shadow .4s;
+
+  &.hidden {
+    right: -50%;
+    transition: all .5s ;
+
+  }
+}

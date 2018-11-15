@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<section class="login">
+    <div class="login__container">
+        <div class="svg" id="title">
+            <svg>
+                <text x="50%" y="50%" text-anchor="middle" alignment-baseline="central" font-size="50" class="svg__text">Hello, World</text>
+            </svg>
+        </div>
+        <div class="login__card" id="login-card">
+            <form class="login-form">
+                <input class="login-form__input" id="username" placeholder="Username" required>
+                <label class="login-form__label" for="username">Username</label>
+
+                <select class="login-form__select" id="lang" required>
+                    <option value="none">Select A Language</option>
+                    <option value="en">English</option>
+                    <option value="nl">Dutch</option>
+                    <option value="es">Spanish</option>
+                    <option value="ja">Japanese</option>
+                    <option value="de">German</option>
+                </select>
+                <button class="btn" id="login">Login</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="chat">
+    <button class="logout-button btn hidden" id="logout">Logout</button>
+    <div class="chat__container hidden" id="main-container">
+        <div class="chat__window" id="chat-window">
+
+
+            <div class="chat__row">
+                <div class="message message--left">
+                    <div class="message__title message__title--left">
+                        Jim
+                    </div>
+                    <div class="message__body message__body--left">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </div>
+                </div>
+            </div>
+            <div class="chat__row">
+                <div class="message message--right">
+                    <div class="message__title message__title--right">
+                        You
+                    </div>
+                    <div class="message__body message__body--right">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid asperiores autem cum dolore doloremque doloribus eum facere facilis ipsa ipsum, libero molestias nisi optio quasi reiciendis repellendus sapiente ullam.
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat__row">
+                 <div class="message--system">
+                     Jimmy has joined the chat
+                </div>
+            </div>
+
+            <div class="chat__row">
+                <div class="message message--left">
+                    <div class="message__title message__title--left">
+                        Jim
+                    </div>
+                    <div class="message__body message__body--left">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus delectus dolor, doloremque error est illum incidunt maiores modi nobis nulla numquam, quidem ratione recusandae repellendus sapiente suscipit tempora unde, voluptatum!
+                    </div>
+                </div>
+            </div>
+            <div class="chat__row">
+                <div class="message message--right">
+                    <div class="message__title message__title--right">
+                        You
+                    </div>
+                    <div class="message__body message__body--right">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="chat__input">
+            <input id="chat-input" placeholder="Enter A Message">
+        </div>
+    </div>
+</section>
+<!-- JS -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

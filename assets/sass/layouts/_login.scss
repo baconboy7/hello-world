@@ -1,0 +1,27 @@
+.login {
+  &__container{
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__card {
+    padding: 5rem;
+    border-radius: 1rem;
+    background-image: $gradient-dark-1;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+    animation: fadeUp 1.5s 1.5s ease-in backwards;
+
+    transition: all 1s;
+    opacity: 1;
+    transform: translateY(0);
+
+    &.hidden {
+      opacity: 0;
+      transform: translateY(500%);
+    }
+  }
+
+}
+
